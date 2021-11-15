@@ -1,4 +1,5 @@
 <h1 align="center">DreamCoding과 함께하는 JavaScript 스터디</h1>
+<div align="center"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width="90" height="35"></div>
 <br>
 <ul>
   <li>유튜브 : <a href="https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2">바로가기</a></li>
