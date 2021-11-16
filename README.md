@@ -1,5 +1,5 @@
 <h1 align="center">DreamCoding과 함께하는 JavaScript 스터디</h1>
-<div align="center"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width="120"></div>
+<div align="center"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width="200"></div>
 <br>
 <div align="center">
 <a href="https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2"><img width="90" alt="스크린샷 2021-11-16 오후 3 14 35" src="https://user-images.githubusercontent.com/78011677/141931507-6371e007-e916-4a09-a388-d3be15ec382f.png"></a>
