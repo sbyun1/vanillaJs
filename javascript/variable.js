@@ -6,7 +6,7 @@
 //성능 개선까지 기대.
 'use strict';
 
-// 2. Variable
+// 2. Variable, rw(read/write) 메모리에 값을 읽고 쓰는 것이 가능
 // let (added in ES6)
 let globalName = 'global name';
 //항상 메모리에 탑재되므로 최소한으로 쓰기
@@ -17,19 +17,32 @@ let globalName = 'global name';
     console.log(name);
 }
 
-//var (don't ever use this!!!)
+//var (don't ever use this)
 // var hoisting(move declaration from bottom to top)
 //    : 어디에 선언했냐에 상관 없이 항상 제일 위로 선언을 끌어올려주는 것
 // has no block scope : 블럭을 철저하게 무시함
 
-// 3. Constants (한 번 선언하면 값 변경 불가)
+// 3. Constant, r(read only) (한 번 선언, 값 할당하면 값 변경 불가)
+//use const whenever possible.
+//only use let if variable needs to change.
+const daysInWeek = 7;
+const maxNumber = 5;
+
+//Note!!
+//Immutable data types(데이터 번경 불가) : premitive types, frozen objects(i.e. object.freeze())
+//Mutable data types(변경 가능한 데이터 타입) : all objects by default are mutable in JS
 // favor immutable data type always for a few reasons:
 // 웬만하면 값 할당 후 변경할 수 없는걸로 사용해라 
 //  - security
 //  - thread safety
 //  - reduce human mistakes
-const daysInWeek = 7;
-const maxNumber = 5;
+
+//primitive type : value 자체가 메모리에 저장
+//object : 너무 커서 메모리에 한 번에 다 올라갈 수 없음.
+//          const noa;라고 선언하고 obj를 할당하게 되면 noa가 가리키는 곳에는 reference가 있다.
+//          ref를 통해서 실제로 obj가 담겨있는 메모리를 가리킴
+//          --> noa가 가리키는 포인터만 잠겨서 noa는 다른 obj로 변경 불가하지만,
+//              ref가 가리키는 name이나 age는 변경 가능
 
 // 4. Variable Types
 // primitive type, single item : number, string, boolean, null, undefined, symbol
