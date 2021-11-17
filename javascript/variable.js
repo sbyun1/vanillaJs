@@ -17,7 +17,7 @@ let globalName = 'global name';
     console.log(name);
 }
 
-//var (don't ever use this)
+//var (don't ever use this!!!)
 // var hoisting(move declaration from bottom to top)
 //    : 어디에 선언했냐에 상관 없이 항상 제일 위로 선언을 끌어올려주는 것
 // has no block scope : 블럭을 철저하게 무시함
