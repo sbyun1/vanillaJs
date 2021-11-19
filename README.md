@@ -7,7 +7,7 @@
 </div>
 <h3>스터디 구성원</h3>
 <ul>
-  <li>🧑🏻‍💻NOA🌊 : <a href="">깃허브</a></li>
+  <li>🧑🏻‍💻NOA🌊 : <a href="https://github.com/noasued">깃허브</a></li>
   <li>🧑🏻‍💻THOMAR🍄 : <a href="https://github.com/kangactor123">깃허브</a></li>
 </ul>
 <br>
