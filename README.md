@@ -18,4 +18,5 @@
   <li>하루에 유튜브 1강</li>
   <li>Dream Coding Academy 강좌를 통해 자바스크립트 익숙해지기</li>
   <li>바닐라 자바스크립트 + jQuery + (타입스크립트/React.js/Vue.js/Angular 중 택 1)</li>
+  <li>서로 코드 리뷰하는 문화를 정착시킵시다.</li>
 <ul>
