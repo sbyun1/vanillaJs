@@ -1,4 +1,4 @@
-// Function
+// Function //
 // - fundamental building block in the program
 // - subprogram can be used multiple times
 // - performs a task or calculates a value
@@ -72,5 +72,108 @@ function printMessage() {
   let message = 'hello';
   console.log(message); // local variable
   console.log(globalMessage);
+
+  function printAnother() {
+    console.log(message);
+    let childMessage = 'hello';
+  }
+  // console.log(childMessage); //error
+  return undefined; // 모든 함수의 default. 굳이 표시해주지 않아도 됨.
 }
 printMessage();
+
+// 6. Return a value
+function sum(a, b) {
+  return a + b;
+}
+const result = sum(1, 2); //3
+console.log(`sum:${sum(1, 2)}`);
+
+// 7. Early return, early exit
+// bad
+function upgradeUser(user) {
+  if (user.point > 10) {
+    // long upgrade logic ...
+  } //블럭 안에 로직 작성 시 가독성이 떨어짐 
+}
+
+// good
+function upgradeUser(user) {
+  if (user.point <= 10) {
+    return; // 조건이 맞지 않을 때 빨리 return하여 함수 종료
+  }
+  //long upgrade logic ...
+}
+
+//////////////////////////////////////
+// First-class function
+// functions are treated like any other variable
+// can be assigned as a value to variable
+// can be passed as an argument to other functions.
+// can be returned by another function
+
+// 1. Function expression
+// a function declaration can be called earlier than it is defined.(hoisted)
+// a function expression is created when the execution reaches it.
+const print = function () { //함수를 선언함과 동시에 바로 print에 할당
+  // function has no name : anonymous function
+  // function has name : named function
+  console.log('print');
+};
+print();
+const printAgain = print;
+printAgain();
+const sumAgain = sum;
+console.log(sumAgain(1, 3));
+
+// 2. Callback function using function expression
+function randomQuiz(answer, printYes, printNo) {
+  if (answer === 'love you') {
+    printYes();
+  } else {
+    printNo();
+  }
+}
+
+//anonymous function
+const printYes = function () {
+  console.log('yes!');
+}
+// named function
+// better debugging in debugger's stack traces
+// recursions - 함수 자신 안에서 함수 계속 호출 -> 프로그램이 죽을 수 있으니 하지 말 것
+const printNo = function print() {
+  console.log('no!');
+}
+randomQuiz('wrong', printYes, printNo);
+randomQuiz('love you', printYes, printNo);
+
+// Arrow function
+//함수를 간결하게 만들어줌
+// always anonymous
+const simplePrint1 = function () {
+  console.log('simplePrint');
+}
+// 위 함수를 아래처럼 작성 가능
+const simplePrint2 = () => console.log('simplePrint!');
+
+const add1 = (a, b) => a + b;
+const add2 = (a, b) => {
+  // do something more
+  return a * b;
+};
+
+// IIFE : Immediately Invoked Function Expression
+function hello1() {
+  console.log('IIFE');
+}
+hello1();
+//보통 함수를 선언하면 선언한 함수를 호출해주어야 하는데, 
+//선언함과 동시에 바로 호출하려면 아래와 같이 함수를 괄호로 묶고 호출하듯 만들어주면 됨.
+(function hello2() {
+  console.log('IIFE');
+})();
+
+// Quiz !
+// function calculate(command, a, b)
+// command : add, substract, divide, multiply, remainder
