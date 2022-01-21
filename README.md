@@ -25,6 +25,6 @@
 </ul>
 <h1 align="center">스터디 방향</h1>
 <ul>
-  <li>NomadCoders Vanilla JavaScript 무료강의로 시작</li>
+  <li>NomadCoders Vanilla JavaScript 무료강의로 시작(2022 01 21 - 2021 01 28 완강 목표)</li>
   <li></li>
 </ul>
