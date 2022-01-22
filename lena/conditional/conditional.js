@@ -29,7 +29,7 @@ else if(age > 50 && age <= 80){
     console.log("You should exercise");
 }
 else if(age > 80){
-    console.log("You can do whatever you want");
+    console.log("You can do whatever you want!");
 }
 
 
