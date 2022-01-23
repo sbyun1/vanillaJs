@@ -1,5 +1,3 @@
-
-
 <h1 align="center">JavaScript Study</h1>
 <div align="center"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width="200"></div>
 <br>
