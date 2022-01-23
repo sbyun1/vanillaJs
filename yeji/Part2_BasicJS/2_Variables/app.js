@@ -14,13 +14,6 @@ console.log(5 / 2);
 // 결과 값은 잘 나오지만, 값을 바꾸려면 다 바꿔야 하기 때문에 더 간단하게 고치자.
 
 // const(constant) : 상수, '변하지 않는 값'을 의미, 계속 유지 되는 값
-// a에 5를 넣어 계산하기
-const a = 5;
-
-console.log(a + 2);
-console.log(a * 2);
-console.log(a / 2);
-
 // a,b를 사용하여 계산하기
 const a = 5;
 const b = 2;
