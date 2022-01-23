@@ -54,7 +54,7 @@ console.log(daysOfWeek);
 // Shopping cart List
 const apple="apple";
 const potato = "potato";
-// 이런 식으로 나열하면 효율성이 떨어지기 때문에 array를 사용하여 담아주자
+// 나열하면 효율성이 떨어지기 때문에 array를 사용하여 담아주자
 const toBuy = ["potato","tomato","pizza"];
 toBuy.push("banana");
 
