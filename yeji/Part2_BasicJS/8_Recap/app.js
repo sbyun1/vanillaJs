@@ -39,12 +39,12 @@ toBuy.push("meat");
 console.log(toBuy); // "potato","tomato","water","meat" 출력
 
 //////////////////////////////////////////////////////////////////////////////
-// Object
-
+// list  : 공통된 맥락이 있다.
 const daysOfWeek = ["mon", "tue", "wed"];  // daysOfWeek array 안의 data들은 같은 종류, 즉 한 주의 요일
-
 // 그러나 문제는, 의미가 있는 property를 저장하려고 할 때가 문제다.
 // 연관되어 있는 property들을 그룹으로 묶어서 저장해야할 때, 사용하는 방법 = object 사용
+
+// Object
 // object 안의 name, points 등은 일종의 variable이지만, 정식 명칭은 property
 
 const player = {
@@ -120,19 +120,19 @@ function body 밖에서 사용할 경우, potato is not defined at ~~ 라는 err
 //////////////////////////////////////////////////////////////////////////////
 // console.log와 같은 것 만들기 (= calculator.add();)
 const calculator = {
-  add: function(a, b){
+  add: function(a,b){
     console.log(a + b);
   },
-  minus: function(a, b){
+  minus: function(a,b){
     console.log(a - b);
   },
   divide: function(a,b){
     console.log(a / b);
   },
-  multi: function(a, b){
+  times: function(a,b){
     console.log(a * b);
   },
-  powerOf: function(a,b){
+  power: function(a,b){
     console.log(a ** b);
   }
 };
@@ -140,5 +140,5 @@ const calculator = {
 calculator.add(40, 20);
 calculator.minus(40, 20);
 calculator.divide(40, 20);
-calculator.multi(40, 20);
-calculator.powerOf(40, 20);
+calculator.times(40, 20);
+calculator.power(40, 20);
