@@ -1,4 +1,16 @@
 body{
     background-color: beige;
 }
-/*test*/
+
+h1{
+    color:cornflowerblue;
+    transition: color .5s ease-in-out; /*color change animation*/
+}
+
+.clicked{ 
+     /*give this class to any element : it will apply this css*/
+    color:tomato;
+}
+.sexy-font{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
