@@ -26,6 +26,7 @@ calculator.power(20, 2);
 
 /* return */
 //함수를 통해 결과값을 받기 원할 때 return 사용
+//return 하면 function은 끝남 -> return 아래의 코드는 실행 안됨
 const age = 96;
 function calculateKrAge(ageOfForeigner){
     return ageOfForeigner + 2;
