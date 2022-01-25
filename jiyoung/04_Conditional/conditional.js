@@ -26,6 +26,14 @@ if(isNaN(age) || age < 0){
     console.log("You can drink");
 }else if(age > 50 && age <= 80){
     console.log("You should exercise");
+}else if(age === 100){
+    console.log("wow you are wise");
 }else if(age > 80){
     console.log("You can do whatever you want");
 }
+
+/* ==, === */
+//==: 값만을 비교
+//===: 유형도 같이 비교(주로 사용하는 것 추천/js에서만 사용됨)
+//ex) 0(0) == false(0) -> true
+//    0(number) === false(boolean) -> false
