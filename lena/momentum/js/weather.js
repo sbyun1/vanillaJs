@@ -14,6 +14,11 @@ function onGeoSuccess(position){
         });
     //fetch:: JS requests the url and then get a response
             //like jQuery ajax()
+    /*response.json(): 
+    response body is a stream.
+    json() reads the body to completion and returns promise :: from JSON to JS Object
+            promise객체를 JSON 형태로 받아온 후 Object 형태로  return 한다
+    */
 };
 
 function onGeoError(){
