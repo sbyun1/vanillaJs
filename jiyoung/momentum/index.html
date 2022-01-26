@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="login-form">
-    <input type="text" placeholder="What is your name?">
+    <!--input 유효성 사용하려면 form 태그 안에 있어야 함-->
+    <form id="login-form">
+    <input 
+        required
+        maxlength="15"
+        type="text" placeholder="What is your name?">
     <button>Login</button>
-    </div>
-    
+    </form>
+
     <script src="app.js"></script>
 </body>
 </html>
