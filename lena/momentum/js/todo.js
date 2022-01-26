@@ -28,9 +28,6 @@ function deleteToDo(event){
     //or use !=== parseInt(li.id) -> li.id is String
     saveTodo();
 }
-
-
-
     /*
     NOTES:
         event.target :: HTML element that event happened 
@@ -66,7 +63,7 @@ function handleToDoSubmit(event){
     const newTodo = toDoInput.value; 
     toDoInput.value = ""; //press enter -> empty the value
 
-    const newTodoObj = { //save as obj so every value can have a unique ID
+    const newTodoObj = { //save as obj so every value can have an unique ID
         text:newTodo,
         id:Date.now(),
     };
@@ -85,14 +82,6 @@ if(savedTodo !== null){
    //parsedTodo.forEach((items) => paintToDo(items)); :: arrow function
     toDo = parsedTodo;
 }
-
-
-
-
-
-
-
-
 
 /*
 OVERALL FLOW:
@@ -121,13 +110,9 @@ OVERALL FLOW:
             -> using filter()
             if toDo.id is equal to s
 
-
-
 NOTES:
     1. Date.now() :: gives millisecond 
         -> use this to give id to each to-do <li>
 
     2. filter() :: Returns the elements of an array that meet the condition specified in a callback function.
-
-         
 */
