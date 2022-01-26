@@ -38,7 +38,7 @@ function handleWindowOffline(){
 function handleWindowOnline(){
     alert("ALL GOOOOOD!!");
 }
-
+ 
 h1.addEventListener("click", handleTitleClick); //handleTitleClick()이 아님!
 h1.addEventListener("mouseenter", handleMouseEnter);
 h1.addEventListener("mouseleave", handleMouseLeave);
