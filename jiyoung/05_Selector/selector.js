@@ -13,9 +13,12 @@ console.log(getId);
 //조건에 맞아도 오직 첫번째 element만 가져옴
 const title = document.querySelector(".hello h1");
 console.log(title);
+title.style.color = "blue";
 
 /* querySelectorAll */
 //조건에 맞는 모든 element 가져올 때 사용
 //array로 반환
 const titleAll = document.querySelectorAll(".hello h1");
 console.log(titleAll);
+
+
