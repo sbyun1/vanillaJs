@@ -12,6 +12,9 @@ function onLoginSubmit(event){
     loginForm.classList.add(HIDDEN_CLASSNAME);
     console.log(username);
 
+    //localStorage.setItem("key", value);
+    localStorage.setItem("username", username);
+
     //"",''이 아닌 ``(백틱)을 사용할 것, 변수는 ${} 안에 선언
     greeting.innerText = `Hello ${username}`;
     //greeting.innerText = "Hello " + username;
