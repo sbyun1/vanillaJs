@@ -34,8 +34,91 @@ console.log(days0fWeek);
 days0fWeek.push("sun");
 
 console.log(days0fWeek);
+/*
+// objects == 내용 player. < 접근 방식
+// player[0] == name
+// player[1] == points
+const player = {
+    //property
+    name: "sangho",
+    points: 10,
+    fat: true,
+};
+console.log(player);
+console.log(player.name);
+// update
+player.fat = false; // 내용 변경
+player.lastName = "potato"; // object 추가
+console.log(player);
+*/
+// Functions part One
+// functions > 반복해서 할 수 있는 동작 함수
+function sayHello(name0fPerson, age){
+    console.log("Hello my name is "+ name0fPerson+" and I'm "+age);
+    
+}
+
+sayHello("sangho", 20);
+sayHello("dal", 30);
+sayHello("cal", 40);
+
+function plus(a, b){
+    console.log(a+b);
+}
+function divide(a, b){
+    console.log(a / b);
+}
+
+plus(1,3);
+divide(98, 20);
+
+const player = {
+    name: "sangho",
+    sayHello: function(otherPersonsName){
+        console.log("hello "+ otherPersonsName + " nice to meet you");
+    },
+};
+console.log(player.name);
+player.sayHello("lynn");
 
 
+// Recap
+const player1 = {
+    name: "Nico",
+    age: 98,
+};
+
+console.log(player1, console);
+
+function plus(potato, salad){
+    console.log(potato + salad);
+}
+
+plus(5, 10);
+plus(1.333, 9898);
+plus(9898, 1.3453)
+
+const calculator = {
+    add: function(a,b){
+        console.log(a+b);
+    },
+    divide: function(a,b){
+        console.log(a/b);
+    },
+    powerof: function(a,b){
+        console.log(a**b);
+    },
+};
+calculator.add(5, 1);
+calculator.divide(4, 2);
+calculator.powerof(3,4);
 
 
+const age = 98;
+function calculateKrAge(age0fForeigner){
+  age0fForeigner + 2;
+  return "hello"
+};
+const krAge = calculateKrAge(age);
 
+console.log(krAge);
