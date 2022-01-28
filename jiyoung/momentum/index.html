@@ -8,15 +8,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2 id="clock"></h2>
+    <div id="wrap">
+    <a id="clock"></a>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
     <!--input 유효성 사용하려면 form 태그 안에 있어야 함-->
     <form id="login-form" class="hidden">
-    <input 
-        required
-        maxlength="15"
-        type="text" placeholder="What is your name?">
-    <input type="submit" value="Log in">
+        <input
+            required
+            maxlength="15"
+            type="text" placeholder="What is your name?">
+        <input type="submit" value="Log in">
     </form>
+
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter" required>
@@ -26,9 +32,6 @@
         <span></span><br>
         <span></span>
     </div>
-    <div id="weather">
-        <span></span>
-        <span></span>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
