@@ -1,3 +1,10 @@
+#wrap{
+    width: 100%;
+    position: flex;
+    text-align: center;
+    margin-top: 150px;
+}
+
 .hidden{
     display: none;
 }
@@ -16,4 +23,48 @@ img{
 
 body{
     color: white;
+}
+
+#todo-list{
+    list-style: none;
+}
+
+#todo-list button{
+    background-color: transparent;
+    border: none;
+}
+
+#todo-form input{
+    background-color: transparent;
+    width: 500px;
+    color: white;
+    text-align: center;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+}
+
+#todo-form input:focus {outline:none;}
+
+#todo-form input::placeholder{
+    color: white;
+}
+
+#clock{
+    font-size: 60pt;
+    font-weight: bold;
+}
+
+#quote span, #weather span{
+    font-size: 0.7rem;
+}
+
+#quote{
+    margin-top: 20px;
+}
+
+#greeting{
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
