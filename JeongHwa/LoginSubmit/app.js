@@ -15,10 +15,11 @@ function onLoginSubmit(event) {
    loginForm.classList.add(HIDDEN_CLASSNAME);
    console.log(username);
    
-   //두가지 방법모두 같은 값 출력
+   //두가지 방법모두 같은 값 출력 
    greeting.innerHTML = "Hello " + username;
    greeting.innerHTML = `Hello ${username}`;
    greeting.classList.remove(HIDDEN_CLASSNAME);
+   
 }
 
 function handleLinkClick(event) {
