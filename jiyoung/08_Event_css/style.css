@@ -1,0 +1,16 @@
+body{
+    background-color: antiquewhite;
+}
+
+h1, h2{
+    color: cornflowerblue;
+    transition: color 0.5s ease-in-out;
+}
+
+.active{
+    color: tomato;
+}
+
+.sext-font{
+    font-size: xx-large;
+}
