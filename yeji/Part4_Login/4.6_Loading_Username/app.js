@@ -46,5 +46,5 @@
   // 3. greeting을 보여주기 위해서 hidden class명을 제거해야 함
     // greeting.innerText = `Hello ${savedUsername}`;
     // greeting.classList.remove(HIDDEN_CLASSNAME);
-    paintGreetings(username);
+    paintGreetings(savedUsername);
   }
