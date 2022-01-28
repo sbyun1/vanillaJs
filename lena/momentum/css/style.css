@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ACCchildrenheartOTF-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrenheartOTF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'ACCchildrenheartOTF-Regular';
+}
+#todo-form > input[type=text]{
+    width: 800px;
+    height: 40px;
+    border:none;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'ACCchildrenheartOTF-Regular';
+    font-size: 15pt;
+}
+#clock{
+    font-family: 'LAB디지털';
+    color:white;
+    font-size:70pt;
+}
+
+#greeting{
+    font-family: '양진체';
+    color:white;
+}
+
+button{
+    all:unset;
+    margin-left: 30px;
+   
+}
+ li{
+    list-style: none;
+    font-size: 20pt;
+ }
+.hidden{
+    display:none;
+}
+
+
+  
+#bgimg {
+    position:absolute;
+    left:0;
+    top:0;
+	max-width:100%;
+    min-width:1680px;;
+    max-height:1050px;
+    min-height:1200px;
+    z-index:-5;
+    filter: brightness(90%);
+    opacity: 83%;
+  }
+
+  span{
+      color:white;
+  }
+  
