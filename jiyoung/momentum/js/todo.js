@@ -19,8 +19,9 @@ function saveToDos(){
 //클릭된 elements의 부모
 function deleteToDo(event){
     const li = event.target.parentElement;
-    console.log(li.id);
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 }
 
 /* appendChild */
@@ -62,3 +63,4 @@ if(savedToDos !== null){
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
