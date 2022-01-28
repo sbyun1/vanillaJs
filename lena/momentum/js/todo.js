@@ -45,7 +45,7 @@ function paintToDo(newTodo){ //create to-do list on window
         li.id = newTodo.id; //set new to-do list id with the newTodo id
 
         const span = document.createElement("span"); 
-        span.innerText = newTodo.text; //add newTodo to span
+        span.innerText = `☺︎ ${newTodo.text}`; //add newTodo to span
         
         const btn = document.createElement("button");
         btn.innerText = "❌";
