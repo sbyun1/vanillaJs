@@ -1,3 +1,78 @@
 .hidden{
   display: none;
 }
+
+body{
+  margin:0;
+  position: relative;
+  align-items: center;
+  color:azure;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+}
+
+h1,h2,form,div,input,ul,img{
+  position: absolute;
+}
+
+img{
+  width:100%;
+  overflow:hidden;
+  z-index: -5;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 20px;
+  margin-left: 20px;
+
+}
+
+h1{
+  font-size: 80px;
+  font-weight: 400;
+  margin-left: 35%;
+  margin-top: 15%;
+}
+
+#todo-form{
+  margin-top: 28%;
+  margin-left: 33%;
+}
+#todo-form input{
+  width:350px;
+  height:30px;
+  line-height: normal;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom: 3px solid gainsboro;
+  background-color: transparent;
+  color:aliceblue;
+  padding-left: 6px;
+}
+input::placeholder{
+  color:azure;
+  opacity: 0.6;
+}
+ul{
+  width:350px;
+  margin-top: 34%;
+  margin-left: 32%;
+  list-style: none;
+}
+
+#quote{
+  margin-top: 51%;
+  margin-left: 20px;
+  width:100%;
+  opacity: 0.7;
+}
+#weather{
+  float:right;
+  right: 10px;
+}
+button{
+  margin-left: 15px;
+}
