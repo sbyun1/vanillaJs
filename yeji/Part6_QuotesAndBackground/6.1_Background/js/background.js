@@ -1,17 +1,15 @@
-// 1. img 폴더에 있는 사진 이름과 동일하게 array 생성
+// 1. Array에서 랜덤하게 한가지 element를 골라내기
     const images = ["0.jpg", "1.jpg", "2.jpg"];
 
-// 2. 랜덤 이미지 가져오기
+/* 2. 가장 중요한 부분 : 숫자를 고르는 부분 */
     const chosenImage = images[Math.floor(Math.random() * images.length)];
-    //console.log(chosenImage);
 
-// 3. HTML에 실제로 이미지 넣기 (JS에서 HTML element 생성)
+// 3. JS에서 HTML element 생성하기
     const bgImage = document.createElement("img");
-    //console.log(bgImage);
 
-// chosenImage를 추가해서 String으로 만들기
+// 4. img를 만들고 몇가지 property를 넣어주기
     bgImage.src = `./img/${chosenImage}`;
-    // console.log(bgImage);
 
-// bgImage를 body에 추가하기
-document.body.appendChild(bgImage);
+// 5. 생성한 bgImage를 body에 append 시키기 (제일 마지막에 들어감)
+// 가장 위에 위치시키고 싶다면 prepend 사용
+    document.body.appendChild(bgImage);
