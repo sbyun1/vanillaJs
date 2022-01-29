@@ -19,27 +19,31 @@
         <button>Log In</button>
     </form>
 
+    <h1 id="greeting" class="hidden"></h1>
+    
     <!-- clock -->
     <h2 id="clock">00:00:00</h2>
-
-    <h1 id="greeting" class="hidden"></h1>
-
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To do and Press Enter." required />
-    </form>
-
-    <!-- delete button 만들기-->
-    <ul id="todo-list"></ul>
 
     <!-- quotes & author -->
     <div id="quote">
         <span></span>
         <span></span>
     </div>
+
+    <!-- To-Do form -->
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To do and Press Enter" required />
+    </form>
+
+    <!-- delete button 만들기-->
+    <ul id="todo-list"></ul>
+
+    <!-- weather & city-->
     <div id="weather">
         <span></span>
         <span></span>
     </div>
+
     <script src="./js/clock.js"></script>
     <script src="./js/greetings.js"></script>
     <script src="./js/quotes.js"></script>
