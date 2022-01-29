@@ -26,7 +26,6 @@ if(isNaN(age) || age < 0){
 }else if(age === 100){
   console.log("wow you are wise");
 }
-
 만약, 이 순서라면 conditional이 중첩되기 때문에 숫자 "100" 입력 시 => age > 80 조건에 만족함
 Top to Bottom에 의해 위의 else if문이 먼저 실행되므로 
 "wow you are wise"가 아닌 "You can do whatever you want"가 실행된다.
@@ -46,13 +45,11 @@ Top to Bottom에 의해 위의 else if문이 먼저 실행되므로
     true && false     => false
     false && true     => false
     false && false    => false
-
   || (or, one of them)
     true || true      => true
     true || false     => true
     false || true     => true
     false || false    => false
-
 */
 
 // ex. 더 많은 condition을 추가해보자

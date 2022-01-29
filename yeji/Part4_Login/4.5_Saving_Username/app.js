@@ -12,27 +12,26 @@
   
   * setItem()과 반대로 getItem()으로 저장한 값을 불러올 수 있음
     ex. F12 > console창 > localStorage.getItem("username")
-
   * 원한다면 저장한 값을 지울 수 있음
     ex. F12 > console창 > localStorage.removeItem("username") > Application 가서 삭제된 것 확인
   */
 
-  const loginForm = document.querySelector("#login-form");
-  const loginInput = document.querySelector("#login-form input");
-  const greeting = document.querySelector("#greeting");
-  const HIDDEN_CLASSNAME = "hidden";
-
-  function onLoginSubmit(event){
-    event.preventDefault();
-    loginForm.classList.add(HIDDEN_CLASSNAME);
-
-    const username = loginInput.value;            // username : 저장될 item의 이름
-    localStorage.setItem("username",username);    // 값은 "username" 변수 
-
-    greeting.innerText = `Hello ${username}`;
-    greeting.classList.remove(HIDDEN_CLASSNAME);
-    
-    console.log(username);
-  }
+    const loginForm = document.querySelector("#login-form");
+    const loginInput = document.querySelector("#login-form input");
+    const greeting = document.querySelector("#greeting");
+    const HIDDEN_CLASSNAME = "hidden";
   
-  loginForm.addEventListener("submit", onLoginSubmit); 
+    function onLoginSubmit(event){
+      event.preventDefault();
+      loginForm.classList.add(HIDDEN_CLASSNAME);
+  
+      const username = loginInput.value;            // username : 저장될 item의 이름
+      localStorage.setItem("username",username);    // 값은 "username" 변수 
+  
+      greeting.innerText = `Hello ${username}`;
+      greeting.classList.remove(HIDDEN_CLASSNAME);
+      
+      console.log(username);
+    }
+    
+    loginForm.addEventListener("submit", onLoginSubmit); 

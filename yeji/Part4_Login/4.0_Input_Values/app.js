@@ -21,16 +21,16 @@
   // const loginInput = loginForm.querySelector("input");
   // const loginButton = loginForm.querySelector("button");
 */
-  const loginInput = document.querySelector("#login-form input");
-  const loginButton = document.querySelector("#login-form button");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
 // 4. Log In 버튼 click 시, console.log()에 출력하기
-  function onLoginBtnClick(){
-    // index에서 name 입력 시, 입력하는 value를 얻어서 console에 출력하기
-    // ⓑ console.dir(loginInput);    // console에서 나오는 input 클릭 -> 그 중 value에 값을 알고 싶은 것 (HTML파일 안에서 value값을 미리 넣어줄 수 있음)
-    // ⓒ
-    console.log(loginInput.value);
-    // ⓐ console.log("click!!!");
-  }
+function onLoginBtnClick(){
+  // index에서 name 입력 시, 입력하는 value를 얻어서 console에 출력하기
+  // ⓑ console.dir(loginInput);    // console에서 나오는 input 클릭 -> 그 중 value에 값을 알고 싶은 것 (HTML파일 안에서 value값을 미리 넣어줄 수 있음)
+  // ⓒ
+  console.log(loginInput.value);
+  // ⓐ console.log("click!!!");
+}
 
-  loginButton.addEventListener("click", onLoginBtnClick);
+loginButton.addEventListener("click", onLoginBtnClick);

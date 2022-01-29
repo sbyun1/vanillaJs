@@ -51,9 +51,7 @@ h1.addEventListener("click", handleTitleClick);      // 사용자가 title을 cl
     ☆★ 여기서 handleTitleClick function을 실행하지 않게 하는 것이 굉장히 중요 ★☆
     ∴ function을 바로 실행시키지 않고, 이 function을 JS에 넘겨주고, user가 title을 click할 경우에 JS가 실행 버튼을 대신 눌러주길 바라는 것
     사용자가 직접 함수의 실행버튼을 click하지 않고, JS에 function 이름을 넘겨준 후, user가 click할 경우 JS가 사용자 대신 실행버튼을 눌러주게 만드는 것
-
     * 그렇기 때문에 argument에 작성 시, handleTitleClick()이 아닌 handleTitleClick 만 작성해야 바로 실행되지 않음
-
     HTML element(h1)를 가져와서 , addEventListener function을 실행시켜 주면 된다.
 */
 
@@ -61,17 +59,13 @@ h1.addEventListener("click", handleTitleClick);      // 사용자가 title을 cl
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /* listen하고 싶은 event를 찾는 가장 좋은 방법
-
   1. Mozilla Developer Network인 MDN에 검색해보는 방법
     "element Name" + "html element mdn" + google search
       ex. h1 html element mdn
-
     링크에 "-Web APIs | MDN" 라는 문장이 포함된 페이지 찾기 (https://developer.mozilla.org/ko/docs/Web/API/HTMLElement)
-
   2. console.dir(element Name); 출력
     on으로 시작되는 것을 event로 사용할 수 있음
       event로 사용할 때는 onbort 대신 abort로 사용해야함
-
 */
 
 // console.dir(elementName); 
@@ -89,7 +83,6 @@ h1.addEventListener("mouseleave", handleMouseLeave);
   1. addEventListener()
   2. oneventname property에 event listener를 할당
     // h1.addEventListener("click", handleTitleClick); 대신 h1.onclick = handleTitleClick; 으로 작성해도 됨
-
   addEventListener()의 장점
    - 나중에 removeEventListener를 사용해 event listener를 제거할 수 있기 때문
 */
