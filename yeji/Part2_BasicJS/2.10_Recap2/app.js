@@ -26,18 +26,14 @@ const calculator = {
 
 const addResult = calculator.add(2, 3);
 /*
-
 add: function(a,b){
     console.log(a + b);
   }
-
   function을 const, let, var와 같은 variable에 할당하면 그 variable은 plus function의 결과type을 갖게 될 것 (다른 것은 결과를 return함)
   여기서의 plus는 아무것도 return 하지 않음 (무언가를 console.log만 할 뿐 -> console에 보이긴 하지만, function외부에서 value를 얻고 싶을 때는 부적합)
-
   console.log() 대신 return을 사용
   variable에 function을 할당하면 variable은 function의 return value를 가지게 되는 것
   return a + b; 를 받으면 addResult에서는 5가 될 것 ! (=> 하지만 이건 return을 했을 때만 가능한 일)
-
   # 중요한 점 #
   function을 호출 -> return 값 반환 -> function 종료
   - 한번 return 하면 function은 끝남

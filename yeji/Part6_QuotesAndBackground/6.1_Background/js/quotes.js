@@ -54,20 +54,16 @@ const author = document.querySelector("#quote span:last-child");
         - 숫자를 곱해서 사용 (* 숫자)
             => 10까지의 element를 구하기 위해서는 "* 10"을 하자 (= Math.random() * 10)
         - Math.random()은 소수점 자리수가 출력 : 이걸 없애기 위해서는 세가지 function을 사용할 수 있다.
-
         ⓐ Math.round() : 숫자에 반올림
             ex. 1.1이 있다면, round() 사용 시   -> return 1
                 1.2, 1.3, 1.4도 모두           -> return 1
                 하지만 1.5, 1.6, 1.7, 1.8은     -> return 2
-
         ⓑ Math.ceil() : 숫자를 천장(ceil)까지 높여줌
             ex. 1.1이 있다면, ceil() 사용 시   -> return 2
                 1.01만 되어도                  -> return 2
-
         ⓒ Math.floor() : 숫자를 바닥(floor)까지 내려줌
             ex. 1.9가 있다면, floor() 사용 시  -> return 1
                 1.999999도                    -> return 1
-
     3) random하게 얻은 숫자에 10을 곱해서 floor() 사용하기
 */
 
