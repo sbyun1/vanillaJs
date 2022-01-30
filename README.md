@@ -1,4 +1,6 @@
- <h1 align="center">JavaScript Study</h1>
+
+<h1 align="center">JavaScript Study</h1>
+
 <div align="center"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" width="200"></div>
 <br>
 <div align="center">
@@ -11,10 +13,10 @@
   <li>🧑🏻‍💻NOA🌊 : <a href="https://github.com/noasued">깃허브</a></li>
   <li>👩🏻‍💻Lena🌻 : <a href="https://github.com/sbyun1">깃허브</a></li>
   <li>👨🏻‍💻Daewon🐿 : <a href="https://github.com/abyss0246">깃허브</a></li>
-  <li>JeongHwa : <a href="https://github.com/GongJeongHwa">깃허브</a></li>
-  <li>Jiyoung : <a href="https://github.com/jiyoungbb">깃허브</a></li>
-  <li>Yeji : <a href="https://github.com/YEJIXD">깃허브</a></li>
-  <li>Sangho : <a href="https://github.com/siren0416">깃허브</a></li>
+  <li>👩🏻‍💻JeongHwa : <a href="https://github.com/GongJeongHwa">깃허브</a></li>
+  <li>👩🏻‍💻Jiyoung : <a href="https://github.com/jiyoungbb">깃허브</a></li>
+  <li>👩🏻‍💻Yeji : <a href="https://github.com/YEJIXD">깃허브</a></li>
+  <li>👨🏻‍💻Sangho : <a href="https://github.com/siren0416">깃허브</a></li>
 </ul>
 <br>
 <h1 align="center">스터디 목표</h1>
