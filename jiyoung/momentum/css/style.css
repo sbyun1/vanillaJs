@@ -1,0 +1,77 @@
+#wrap{
+    width: 100%;
+    position: flex;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.hidden{
+    display: none;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+    opacity: 80%;
+}
+
+body{
+    color: white;
+}
+
+#todo-list{
+    list-style: none;
+}
+
+#todo-list button{
+    background-color: transparent;
+    border: none;
+}
+
+#todo-form{
+    margin-top: 90px;
+}
+
+#todo-form input{
+    background-color: transparent;
+    width: 300px;
+    color: white;
+    text-align: center;
+    border-left-width:0;
+    border-right-width:0;
+    border-top-width:0;
+    border-bottom-width:1;
+    border-color: whitesmoke;
+}
+
+#todo-form input:focus {outline:none;}
+
+#todo-form input::placeholder{
+    color: white;
+}
+
+#clock{
+    font-size: 60pt;
+    font-weight: bold;
+}
+
+#quote span, #weather span{
+    font-size: 0.7rem;
+}
+
+#quote{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#greeting{
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
